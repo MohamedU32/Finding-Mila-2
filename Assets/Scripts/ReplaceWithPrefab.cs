@@ -21,15 +21,5 @@ public class ReplaceWithPrefab : MonoBehaviour
             DestroyImmediate(oldModel);
         }
         Debug.Log("Replacement completed!");
-
-    //    GameObject[] objects = GameObject.FindGameObjectsWithTag("Shelf");
-
-    //    foreach (GameObject obj in objects)
-    //    {
-    //        if (obj.GetComponent<Collider>() == null)
-    //        {
-    //            obj.AddComponent<BoxCollider>(); // Change to your preferred collider type
-    //        }
-    //    }
     }
 }
