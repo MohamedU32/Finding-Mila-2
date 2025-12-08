@@ -7,12 +7,12 @@ public class OpenBox : MonoBehaviour
 {
     [SerializeField] private GameObject _replacement;
     [SerializeField] private bool _open = false;
-    private XRGrabInteractable _interactable;
+    private UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable _interactable;
 
     // Start is called before the first frame update
     void Start()
     {
-        _interactable = GetComponent<XRGrabInteractable>();
+        _interactable = GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable>();
         _interactable.selectEntered.AddListener(OnGrab);
     }
 
